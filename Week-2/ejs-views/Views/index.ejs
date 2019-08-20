@@ -1,0 +1,74 @@
+<!--
+=================================================================
+; Title:  Assignment 2.4
+; Author: Karie Funk & W3Schools.com
+; Date:  19 Aug, 2019
+; Description: EJS views HTML portion with Bootstrap 
+; Code attribution: W3schools.com
+;================================================================
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>EJS-bootstrap</title>
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    
+                  </ul>
+          
+              </div>
+            
+
+        </nav>
+
+       
+
+        <div class="page-hero d-flex align-items-center justify-content-center">
+            <h1>EJS Views Examples </h1>
+           </div>
+         
+
+                  <br></br>
+
+
+                   
+                  <div class="container">
+                      <div class="row">
+                    <div class="col-sm-4">
+                      <p>name: <%= firstName %> <%= lastName %></p>
+                      <p>address: <%= address %></p>
+                      </div>
+                   
+                    </div>
+                  </div>
+                  
+           
+            
+                  
+    </body>
+</html>
+
