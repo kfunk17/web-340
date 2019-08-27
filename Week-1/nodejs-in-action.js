@@ -35,3 +35,10 @@ var s = http.createServer(processRequest);
 s.listen(8080);
 
 //END PROGRAM
+
+function Song(title,genre){ 
+    this.title=title; 
+    this.genre=genre;
+    };
+    
+  
