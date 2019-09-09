@@ -20,7 +20,7 @@ var logger = require('morgan');
 //HEADER
 var header = require('./Funk-header.js');
 
-console.log(header.display("Karie", "Funk", "Exercise 3.2"));
+console.log(header.display("Karie", "Funk", "Exercise 3."));
 
 console.log("");
 

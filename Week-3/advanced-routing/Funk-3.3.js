@@ -8,6 +8,7 @@
 ;===========================================
 */
 
+
 //HEADER
 var header = require('./Funk-header.js');
 
@@ -53,9 +54,9 @@ app.set("view engine", "ejs");
 
 
 //created new server and listen on port 8080
- http.createServer(app).listen(8080, function() {
+ http.createServer(app).listen(3001, function() {
 
-   console.log("Application started on port 8080");
+   console.log("Application started on port 3001");
 
 });
 
