@@ -1,11 +1,70 @@
+<!--
+============================================
+; Title: EMS
+; Author: Karie Funk
+; Date: 8 September 2019
+; Description: LIST EJS
+;===========================================
+-->
+<h1>Employee Records</h1>
+<br  />
+<table id="table-ind" class="table">
+    <tr>
+      <th>FIRST NAME</th>
+      <th>LAST NAME</th>
+      <th>EMAIL</th>
+      <th>PHONE</th>
+    </tr>
+    <tr>
+      <td>Abby</td>
+      <td>Smith</td>
+      <td>absmith@gmail.com</td>
+      <td>(555)820-9090</td>
+    </tr>
+    <tr>
+        <td>Bobby</td>
+        <td>Schillz</td>
+        <td>schillz@gmail.com</td>
+        <td>(509)840-9430</td>
+    </tr>
+    <tr>
+        <td>Cilvia</td>
+        <td>Baker</td>
+        <td>bakercl@gmail.com</td>
+        <td>(349)220-4490</td>
+    </tr>
+    <tr>
+        <td>Daniel</td>
+        <td>Haverford</td>
+        <td>dannyhave343@gmail.com</td>
+        <td>(999)440-2300</td>
+    </tr>
+  </table>
 
-<% include header %>
+  <br  /><br  />
+  
+  <style>
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      font-family: tahoma, sans-serif;
+    }
 
-
-<div role="main" class="container">
-	<h1><%= title %></h1><br />
-	<p><%= message %></p><br />
-</div>
-
-
-<% include footer %>
+    #table-ind {
+      margin-left: auto;
+      margin-right: auto;
+      background:white;
+      max-width: 800px;
+      max-height: 400px;
+    }
+    .table {
+     width: 100%;
+    }
+    td, th {
+      border: 1px solid black;
+     }
+    th{
+        background-color: lightgray;
+   }
+  </style>
