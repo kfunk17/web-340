@@ -12,7 +12,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Fruit Schema
+// Employee Schema
 let EmployeeSchema = new Schema({
   firstName: {type: String, required: true },
   lastName: {type: String, required: true }
