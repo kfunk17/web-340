@@ -7,39 +7,32 @@
 ;===========================================
 -->
 <h1>Employee Records</h1>
-<br  />
-<table id="table-ind" class="table">
-    <tr>
-      <th>FIRST NAME</th>
-      <th>LAST NAME</th>
-      <th>EMAIL</th>
-      <th>PHONE</th>
-    </tr>
-    <tr>
-      <td>Abby</td>
-      <td>Smith</td>
-      <td>absmith@gmail.com</td>
-      <td>(555)820-9090</td>
-    </tr>
-    <tr>
-        <td>Bobby</td>
-        <td>Schillz</td>
-        <td>schillz@gmail.com</td>
-        <td>(509)840-9430</td>
-    </tr>
-    <tr>
-        <td>Cilvia</td>
-        <td>Baker</td>
-        <td>bakercl@gmail.com</td>
-        <td>(349)220-4490</td>
-    </tr>
-    <tr>
-        <td>Daniel</td>
-        <td>Haverford</td>
-        <td>dannyhave343@gmail.com</td>
-        <td>(999)440-2300</td>
-    </tr>
+<% if (employees.length) { %>
+  <h2>‐‐ Employee Listing ‐‐</h2><br />
+  <a href="/new">Add New</a>
+  <table class="table table‐hover">
+      <thead class="thead‐dark">
+      <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% employees.forEach(function (entry) { %>
+      <tr>
+          <td><%= entry.firstName %></td>
+          <td><%= entry.lastName %></td>
+          <td><%= entry.email %></td>
+          <td><%= entry.phone %></td>
+      </tr>
+      </tbody>
+      <% }) %>
   </table>
+  <% } else { %>
+  No entries! <a href="/new">Add one!</a>
+  <% } %>
 
   <br  /><br  />
   

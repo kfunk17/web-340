@@ -17,13 +17,24 @@
     <div role="main" class="container" style="width: 50%;">
       <br /><br />
 
-      
+      <h1>Employee Page</h1>
       <form method="post" action="/process">
         <div class="form-group">
-          <label for="txtName">Name:</label>
-          <input type="text" class="form-control" id="txtName" name="txtName" />
+          <label for="txtFirstName">First Name:</label>
+          <input type="text" class="form-control" id="txtFirstName" name="txtFirstName" />
         </div>
-
+        <div class="form-group">
+          <label for="txtLastName">Last Name:</label>
+          <input type="text" class="form-control" id="txtLastName" name="txtLastName" />
+        </div>
+        <div class="form-group">
+          <label for="txtFirstName">Email:</label>
+          <input type="text" class="form-control" id="txtEmail" name="txtEmail" />
+        </div>
+        <div class="form-group">
+          <label for="txtPhone">Phone:</label>
+          <input type="text" class="form-control" id="txtPhone" name="txtPhone" />
+        </div>
         <div class="form-group">
           <!-- CSRF token -->
           <input name="_csrf" value="<%= csrfToken %>" type="hidden" />
