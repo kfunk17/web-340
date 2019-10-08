@@ -1,56 +1,62 @@
 <!--
 ============================================
-; Title: EMS
-; Author: Karie Funk
-; Date: 8 September 2019
-; Description: NEW EJS PAGE TO COME
+; Title:  EMS -- NEW EJS
+; Author: KARIE FUNK
+; Date:   8 SEPT. 2019
+; Description: NEW EJS PAGE
 ;===========================================
--->
+ -->
 
-<!DOCTYPE html>
-<html lang="en">
-  <% include header %>
+ <% include header %>
+ <% include navbar %>
 
-  <body>
-    <% include navbar %>
-
-    <div role="main" class="container" style="width: 50%;">
-      <br /><br />
-
-      <h1>Employee Page</h1>
-      <form method="post" action="/process">
-        <div class="form-group">
-          <label for="txtFirstName">First Name:</label>
-          <input type="text" class="form-control" id="txtFirstName" name="txtFirstName" />
-        </div>
-        <div class="form-group">
-          <label for="txtLastName">Last Name:</label>
-          <input type="text" class="form-control" id="txtLastName" name="txtLastName" />
-        </div>
-        <div class="form-group">
-          <label for="txtFirstName">Email:</label>
-          <input type="text" class="form-control" id="txtEmail" name="txtEmail" />
-        </div>
-        <div class="form-group">
-          <label for="txtPhone">Phone:</label>
-          <input type="text" class="form-control" id="txtPhone" name="txtPhone" />
-        </div>
-        <div class="form-group">
-          <!-- CSRF token -->
-          <input name="_csrf" value="<%= csrfToken %>" type="hidden" />
-
-          <button type="submit" class="btn btn-secondary float-right">
-            Submit
-          </button>
-        </div>
-      </form>
-
-      <br /><br />
-
-    </div>
-    <%include footer %>
-    <% include scripts %>
-  </body>
-</html>
+ <div class="new">
+ <div role="main" class="container" style="width: 50%;">
+         <br /><br />
+ 
+         <h2>Employee Entry Page</h2>
+         <form method="post" action="/process">
+           <div class="form-group">
+             <label for="firstName">Name:</label>
+             <input type="text" class="form-control" id="firstName" name="firstName" />
+           </div>
+           <div class="form-group">
+             <label for="lastName">Last:</label>
+             <input type="text" class="form-control" id="lastName" name="lastName" />
+           </div>
+           <div class="form-group">
+             <label for="email">Email:</label>
+             <input type="text" class="form-control" id="email" name="email" />
+           </div>
+           <div class="form-group">
+             <label for="id">ID:</label>
+             <input type="text" class="form-control" id="id" name="id" />
+           </div>
+ 
+ 
+           <div class="form-group">
+             <!-- CSRF token -->
+             <input name="_csrf" value="<%= csrfToken %>"type="hidden" />
+ 
+             <button type="submit" class="btn btn-secondary float-right">
+               Submit
+             </button>
+           </div>
+         </form>
+ </div>
+</div>
+ <style>
+    h2{
+      padding-top:50px;
+      text-align: center;
+      padding-bottom:35px;
+     }
     
-        
+     .new{
+       padding-bottom:100px;
+     }
+
+</style>
+ 
+ <% include footer %>
+ <% include scripts %>

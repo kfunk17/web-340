@@ -1,16 +1,51 @@
 <!--
 ============================================
-; Title: EMS
-; Author: Karie Funk
-; Date: 8 September 2019
-; Description: VIEW EJS PAGE TO COME
+; Title:  EMS -- VIEW EJS
+; Author: KARIE FUNK
+; Date:   8 SEPT. 2019
+; Description: VIEW EJS PAGE
 ;===========================================
--->
+ -->
 
 <% include header %>
+
 <% include navbar %>
 
-<h1>Employee Information</h1>
 
-<% include scripts %>
+<div role='main' class='container'>
+
+    <br/><br/>
+
+    <h2>Employee Information</h2>
+    <br/>
+
+    <div role = 'main' class = 'container' style = 'width: 50%'>
+        <div class='form-group'>
+            <label for='firstName'>First Name</label>
+            <input type='text' class='form-control' id='firstName'
+            readonly
+            value='<%= employee[0].first %>'
+            name='firstName'
+            <label for='lastName'>Last Name</label>
+            <input type='text' class='form-control' id='lastName'
+            readonly
+            value='<%= employee[0].last %>'
+            name='lastName'
+            <label for='email'>Email</label>
+            <input type='text' class='form-control' id='email'
+            readonly
+            value='<%= employee[0].email %>'
+            name='email'
+            <label for='ID'>ID</label>
+            <input type='text' class='form-control' id='ID'
+            readonly
+            value='<%= employee[0].ID %>'
+            name='ID'
+            />
+        <a href="/">&larr; OK</a>
+    </div>
+</div>
+
+
 <% include footer %>
+<% include scripts %>
